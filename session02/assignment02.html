@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chess-board {
+            border-spacing: 0;
+            border-collapse: collapse; 
+        }
+        .chess-board th {
+            padding: .5em;
+            background: orange; 
+        }
+        .chess-board td {
+            border: 1px solid;
+            width: 2em;
+            height: 2em; 
+        }
+        .chess-board .light {
+            background: #eee; 
+        }
+        .chess-board .dark { 
+            background: #000; 
+        }
+
+
+        .calendar {
+            border-spacing: 0;
+            border-collapse: collapse; 
+        }
+
+        .calendar td {
+          border:1px solid black;
+        }
+
+        .calendar .red{
+            background: red;
+        }
+
+        .calendar .orange{
+            background: orange; 
+        }
+
+        .calendar .blue{
+            background: blue; 
+            
+        }
+
+        .calendar .text-red{
+            background: blue; 
+            
+        }
+
+        .calendar tr td .text-blue{
+            color: blue; 
+            
+        }
+
+        .calendar tr td .text-red{
+            color: red; 
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="chess-board">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>d</th>
+                    <th>e</th>
+                    <th>f</th>
+                    <th>g</th>
+                    <th>h</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Tháng 10 - October</h2>
+        <table class="calendar">
+            <tbody>
+                <tr>
+                    <th class="red">C.Nhật</th>
+                    <th class="orange">T.Hai</th>
+                    <th class="orange">T.Ba</th>
+                    <th class="orange">T.Tư</th>
+                    <th class="orange">T.Năm</th>
+                    <th class="orange">T.Sáu</th>
+                    <th class="blue">T.Bảy</th>
+                </tr>
+                <tr>
+                    <th style="color: red;">SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th style="color: blue;">SAT</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span>1<sub>13</sub></span></td>
+                    <td><span>2<sub>14</sub></span></td>
+                    <td><span class="text-blue">3</span><sub>15</sub></td>
+                </tr>
+                <tr>
+                    <td><span class="text-red">4</span><sub>16</sub></td>
+                    <td><span>5</span><sub>17</sub></td>
+                    <td><span>6</span><sub>18</sub></td>
+                    <td><span>7</span><sub>19</sub></td>
+                    <td><span>8</span><sub>20</sub></td>
+                    <td><span>9</span><sub>21</sub></td>
+                    <td><span class="text-blue">10</span><sub>22</sub></td>
+                </tr>
+                <tr>
+                    <td><span class="text-red">11</span><sub>23</sub></td>
+                    <td><span>12</span><sub>24</sub></td>
+                    <td><span>13</span><sub>25</sub></td>
+                    <td><span>14</span><sub>26</sub></td>
+                    <td><span>15</span><sub>27</sub></td>
+                    <td><span>16</span><sub>28</sub></td>
+                    <td><span class="text-blue">17</span><sub>29</sub></td>
+                </tr>
+                <tr>
+                    <td><span class="text-red">18</span><sub>1.9</sub></td>
+                    <td><span>19</span><sub>2</sub></td>
+                    <td><span>20</span><sub>3</sub></td>
+                    <td><span>21</span><sub>4</sub></td>
+                    <td><span>22</span><sub>5</sub></td>
+                    <td><span>23</span><sub>6</sub></td>
+                    <td><span class="text-blue">24</span><sub>7</sub></td>
+                </tr>
+                <tr>
+                    <td><span class="text-red">25</span><sub>8</sub></td>
+                    <td><span>26</span><sub>9</sub></td>
+                    <td><span>27</span><sub>10</sub></td>
+                    <td><span>28</span><sub>11</sub></td>
+                    <td><span>29</span><sub>12</sub></td>
+                    <td><span>30</span><sub>13</sub></td>
+                    <td><span class="text-blue">31</span><sub>14</sub></td>
+                </tr>
+                
+               
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
