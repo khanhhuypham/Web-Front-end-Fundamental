@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    width: 500px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 4px;
+    display: grid;
+    row-gap: 10px;
+}
+
+
+
+
+
+
+
+
+.board{
+    background-color: rgb(224, 222, 222);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.board > div{
+    display: grid;
+    grid-template-columns: 4px auto;
+    background-color: white;
+}
+
+.board > div > div:first-child{
+    background-color: rgb(4, 136, 4);
+}
+
+.board > div > div:last-child{
+    padding: 20px 10px;
+}
+
+.board button{
+    width: 100px;
+    background-color: green;
+    color: white;
+    font-size: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+

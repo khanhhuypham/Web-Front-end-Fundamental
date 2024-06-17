@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 4px;
+}
+.form-body form {
+    display: grid;
+    grid-row: auto;
+    row-gap: 10px;
+}
+
+.name-field{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+
+.field {
+    display: grid;
+    grid-row: auto auto;
+    row-gap: 5px;
+}
+
+
+.field > p {
+    font-weight: 600;
+}
+
+.field > p > span{
+    font-weight: 200;
+}
+
+.field>input {
+    border-radius: 4px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.field>input:focus{
+    outline:none;
+}
+
+.field>button {
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-color: rgb(175, 175, 175);
+    background-color: white;
+}
+
+
+
+.username-field {
+    display: grid;
+    grid-row: auto auto;
+    row-gap: 10px;
+}
+
+
+.username-field > p {
+    font-weight: 600;
+}
+
+
+
+.username-field > div{
+    display: flex;
+    justify-content: flex-start;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+.username-field > div > span {
+   background-color: rgb(228, 228, 228);
+   padding: 5px 10px;
+}
+
+.username-field > div > input {
+    box-sizing: border-box;
+    border: none;
+    padding: 5px 10px;
+    outline:none;
+    width: 100%;
+}
+
+
+.country-field{
+   display: grid;
+   grid-template-columns: auto auto 120px;
+   column-gap: 10px;
+}
+
+.country-field > div{
+    display: grid;
+    grid-row: auto auto;
+    row-gap: 5px;
+ }
+
+ .country-field > div > input,select {
+    border-radius: 4px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+}
+

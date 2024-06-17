@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.container hr{
+    border-top: dashed 2px gray;
+}
+
+.header{
+   height: 60px; 
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+
+.header p {
+    font-size: 12px;
+}
+
+
+.form-body{
+    margin-top: 15px;
+}
+
+.form-body form{
+    display: grid;
+    grid-row: auto;
+    row-gap: 30px;
+
+    
+}
+
+.form-element{
+    display: grid;
+    grid-row: auto auto;
+    row-gap: 10px;
+}
+
+.form-element > p{
+    font-weight: 600;
+}
+
+.form-element > div{
+    display: grid;
+    row-gap: 15px;
+}
+
+.form-element > select{
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.currency-input{
+    display: grid;
+    grid-template-columns: 100px 50px;
+    column-gap: 5px;
+}
+
+.currency-input > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 5px;
+}
+
+.currency-input input{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+thead{
+    background-color: rgb(192, 191, 191);
+}
+
+table > th{
+    text-align: center;
+}
+
+
+table tr{
+    height: 40px;
+}
+
+table tr > th:first-child{
+    width: 300px;
+    text-align: left;
+}
+
+table td{
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 237, 237);
+}
+
+  

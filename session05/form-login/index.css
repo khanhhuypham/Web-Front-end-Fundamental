@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.form-login{
+    width: 500px;
+    height: 200px;
+    background-color: #D9D9D9;
+    margin: 30px auto;
+}
+
+.logo{
+    width: 100px;
+    margin: 10px auto;
+}
+
+.logo img{
+    width: 100%;
+
+}
+
+

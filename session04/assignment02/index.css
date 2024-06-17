@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
+.content{
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(248, 238, 238);
+    
+}
+
+
+.content p{
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    
+}

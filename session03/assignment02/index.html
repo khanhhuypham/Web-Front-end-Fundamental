@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="/css/checkbox.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Market Research Survey</h3>
+            <p>Please take a few moments to completes this satisfaction survey</p>
+        </div>
+        <hr>
+        <div class="form-body">
+            <form method="post">
+                <div class="form-element">
+                    <label>What is your age range?</label>
+                    <select>
+                        <option value="">18-24</option>
+                        <option value="">25-50</option>
+                        <option value="">50-100</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label>Gender Identity</label>
+                    <select>
+                        <option value="">$0-$25,000</option>
+                        <option value="">$25,000-$50,000</option>
+                        <option value="">$50,000-$100,000</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <p>What is your yearly income range?</p>
+                    
+                    <div>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Male</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Female</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Nonbinary</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Other</span>
+                        </label>
+                    </div>
+
+
+                </div>
+
+                <div class="form-element">
+                    <p>Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+                    <div>
+                        <label class="checkbox">
+                            <input type="checkbox" name="product">
+                            <span class="checkmark"></span>
+                            <span>Product1</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="product">
+                            <span class="checkmark"></span>
+                            <span>Product2</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="product">
+                            <span class="checkmark"></span>
+                            <span>Product3</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="text" name="product" style="margin-left: 50px; height: 30px; width: 200px;">
+                    </div>
+                    
+                </div>
+
+                <div class="form-element">
+                    <p>How often would you use our new product?</p>
+                    
+                    <div>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Daily</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Weekly</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="product">
+                            <span class="checkmark"></span>
+                            <span>Weekly</span>
+                        </label>
+                
+                    </div>
+                </div>
+
+
+                <div class="form-element">
+                    <p>What would you pay for new product?</p>
+                    <div class="currency-input">
+                        <div>
+                            <span>$</span>
+                            <div>
+                                <input type="number" name="frequency">
+                                <p>Dollars</p>
+                            </div>
+                          
+                        </div>
+
+                        <div>
+                            <span>.</span>
+                            <div>
+                                <input type="number" name="frequency">
+                                <p>Cents</p>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <p>What features would you like to see in the new product.</p>
+                    <textarea style="height: 80px;"></textarea>
+                </div>
+
+                <div class="form-element-table">
+                    <table>
+                        <thead>
+                            <th></th>
+                            <th>Strong Disagree</th>
+                            <th>Diagree</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </thead>
+                        <tr>
+                            <th>Our products are priced fairly</th>
+                            <td> 
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>1</p>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>2</p>
+                                </label>
+                            </td>
+                            <td> 
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>3</p>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>4</p>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Our products are high quality</th>
+                            <td> 
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>1</p>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>2</p>
+                                </label>
+                            </td>
+                            <td> 
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>3</p>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>4</p>
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>You would recommend our product to a friend or cowoker</th>
+                            <td> 
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>1</p>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>2</p>
+                                </label>
+                            </td>
+                            <td> 
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>3</p>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="radioBtn">
+                                    <input type="radio" name="product">
+                                    <span class="checkmark"></span>
+                                    <p>4</p>
+                                </label>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </div>
+
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>

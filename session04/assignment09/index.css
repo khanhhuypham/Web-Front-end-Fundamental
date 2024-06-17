@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    width: 500px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 4px;
+}
+
+
+.content{
+    border:  1px solid rgb(216, 213, 213);
+    border-radius: 4px;
+}
+
+
+
+/* Remove the default triangle */
+.item summary {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(216, 228, 255);
+    padding: 10px;
+    border: 1px solid rgb(204, 203, 203);
+    color: blue;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+}
+  
+/* Create a new custom triangle on the right side */
+.item summary::after {
+    display: inline-block;
+    content: '▶️';
+    transition: 0.2s;
+}
+  
+.item details[open] > summary::after {
+    transform: rotate(90deg);
+}
+
+.item details[open] > .item {
+    background-color: white;
+}
+
+
+.hidden-content{
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
