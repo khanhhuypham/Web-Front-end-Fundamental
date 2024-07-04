@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+
+.marq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.geek1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: green;
+    padding-bottom: 10px;
+}

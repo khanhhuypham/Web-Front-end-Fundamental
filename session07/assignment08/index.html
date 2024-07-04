@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script id="custom" src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+
+            <div class="element">
+                <input type="number" id="radius" placeholder="Vui lòng nhập bán kính đường tròn">
+    
+                <div class="btn">
+                    <button onclick="calculateCircumference()">Tính chu vi hình tròn</button>
+                    <span id="resultOfCircumference"></span>
+                </div>
+               
+            </div>
+
+            <div class="element">
+                <input type="number" id="width" placeholder="Vui lòng nhập chiều rộng hình chữ nhật">
+                <input type="number" id="length" placeholder="Vui lòng nhập chiều dài hình chữ nhật">
+                <div class="btn">
+                    <button onclick="calculatePerimeter()">Tính chu vi hình chữ nhật</button>
+                    <span id="resultOfPerimeter"></span>
+                </div>
+                <div class="btn">
+                    <button onclick="calculateArea()">Tính diện tích hình chữ nhật</button>
+                    <span id="resultOfArea"></span>
+                </div>
+            </div>
+
+
+           
+           
+            
+        </div>
+    </div>
+</body>
+</html>

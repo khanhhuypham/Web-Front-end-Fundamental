@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h5 id="demo">Feedback TA</h5>
+        <div class="content">
+            <div class="feedback-frame">
+                <p class="title">Thầy Phú dạy có hay không???</p>
+                <div class="feedback-point" id="feedback-point">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">10</button>
+                </div>
+                <div class="feedback-input">
+                    <input type="text" id="feedback-content" placeholder="Nhập nội dung feedback" />
+                    <button type="button" onclick="AddFeedBack()">Send</button>
+                </div>
+                <!-- <p class="validation-error"></p> -->
+            </div>
+            <div class="feedback-rating">
+                <span id="total-review">0 reviews</span>
+                <span id="average-rating">Average rating: 0</span>
+            </div>
+
+            <div class="feedback-list" id="feedback-list">
+                <!-- <div>
+                    <span>7</span>
+                    <input type="text" placeholder="Nhập nội dung feedback">
+                    <button type="button" onclick="" class="btn-edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button type="button" onclick="RemoveFeedBack()" class="btn-delete">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const arr = [
+        { point: 8, feedback: "hay quá",isSelected:false},
+        { point: 10, feedback: "tuyệt vời",isSelected:false},
+    ];
+
+    function render() {
+        let body = document.getElementById("feedback-list");
+        let result = "";
+        for (let i = 0; i < arr.length; i++) {
+            let data = arr[i]
+            result += `
+                <div>
+                    <span>${arr[i].point} </span>
+                    <input type="text" placeholder="Nhập nội dung feedback" value=${arr[i].feedback}>
+                    <button type="button" onclick="GetFeedBack(${i})" class="btn-edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button type="button" onclick="RemoveFeedBack(${i})" class="btn-delete">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+            `;
+        }
+        body.innerHTML = result;
+
+
+        let list = document.getElementById("feedback-list").children;
+        var averageRating = 0;
+        let totalReview =
+            document.getElementById("feedback-list").children.length;
+        for (let item of list) {
+            let itemChildren = item.children;
+
+            averageRating += Number(itemChildren[0].innerHTML);
+        }
+        document.getElementById("total-review").innerText = totalReview;
+        document.getElementById("average-rating").innerText =
+            "Average rating: " + averageRating / totalReview;
+
+
+    }
+
+    render();
+
+    var btnList = document.getElementsByClassName("btn");
+    for (var i = 0; i < btnList.length; i++) {
+        btnList[i].addEventListener("click", function () {
+            for (var i = 0; i < btnList.length; i++) {
+                btnList[i].classList.remove("btn-active");
+                btnList[i].classList.add("btn");
+            }
+            this.classList.add("btn-active");
+        });
+    }
+
+    function AddFeedBack() {
+        let feedbackContent = document.getElementById("feedback-content").value;
+        var feedbackPoint = 0;
+
+        if (document.getElementsByClassName("btn-active").length > 0) {
+            feedbackPoint =
+                document.getElementsByClassName("btn-active")[0].innerHTML;
+        }
+
+        if (feedbackPoint > 0 && feedbackContent != "") {
+            const newElement = {
+                point: feedbackPoint,
+                feedback: feedbackContent,
+            };
+            arr.unshift(newElement);
+            render();
+        } else {
+            if (feedbackPoint > 0) {
+                alert("Vui lòng nhập điểm");
+            } else if (feedbackContent == "") {
+                alert("vui lòng nhập nội dung feed back");
+            }
+        }
+
+
+    }
+
+    function RemoveFeedBack(index) {
+        console.log(index);
+        arr.splice(index, 1);
+        render();
+    }
+
+    function GetFeedBack(index) {
+    
+        document.getElementById("feedback-content").value = arr[index].feedback
+        let point = arr[index].point
+        arr[index].isSelected = true
+        var btnList = document.getElementsByClassName("btn");
+
+        console.log(point)
+        for (var i = 0; i < btnList.length; i++) {
+            if (i == point - 1){
+                btnList[i].click()
+            }
+        }
+    }
+
+    function updateFeedBack() {
+        
+    }
+
+
+</script>
+
+</html>
